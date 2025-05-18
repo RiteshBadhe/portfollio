@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ritesh Badhe | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 3em;
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      border-left: 5px solid #00bcd4;
+      padding-left: 15px;
+    }
+
+    .about, .skills, .projects, .contact {
+      margin-bottom: 60px;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding-left: 0;
+    }
+
+    .skills li {
+      background: #00bcd4;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: #000;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    .skills li:hover {
+      transform: scale(1.1);
+    }
+
+    .projects .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 15px;
+      background: #00bcd4;
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ritesh Badhe</h1>
+    <p>BSc CS Student | Web Developer | C Programmer</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="ritesh.html"> Links</a>
+      <a href="mailto:riteshbadhe737@gmail.com"> Email me </a>
+    
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Ritesh Badhe, a passionate Computer Science student at Pratibha College. I love building web apps, exploring Data Structures in C, and diving into tech that helps people.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>C Language</li>
+      <li>GitHub</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>My own animated personal website built using HTML & CSS.</p>
+    </div>
+    <div class="card">
+      <h3>DSA Practice in C</h3>
+      <p>A collection of my solutions and practice codes while learning Data Structures in C.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me for collaboration or questions!</p>
+    <a href="mailto:riteshbadhe65@gmail.com">Email Me</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Ritesh Badhe. All rights reserved.
+  </footer>
+
+</body>
+</html>
